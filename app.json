@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "fun-for-couples",
+    "slug": "fun-for-couples",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "fun-for-couples"
+}
