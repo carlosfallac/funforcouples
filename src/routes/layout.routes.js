@@ -1,0 +1,25 @@
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+import { Trips } from "../screens/Layout/Trips";
+import { Movies } from "../screens/Layout/Movies";
+import { Extras } from "../screens/Layout/Extras";
+import { Account } from "../screens/Layout/Account";
+
+const { Navigator, Screen } = createBottomTabNavigator();
+
+export function LayoutRoutes() {
+  return (
+    <Navigator
+      initialRouteName="Trips"
+      screenOptions={{
+        headerShown: false
+      }}
+    >
+      <Screen name="Trips" component={Trips} />
+      <Screen name="Movies" component={Movies} />
+      <Screen name="Extras" component={Extras} />
+      <Screen name="Account" component={Account} />
+    </Navigator >
+  );
+}
