@@ -1,10 +1,12 @@
-import React from "react"
-import { Text, View } from "react-native";
+import React from "react";
+import { Container, Title } from "../../../themes";
+import { FormSignUp } from "../../../components/Forms/FormSignUp";
 
 export function SignUp() {
   return (
-    <View>
-      <Text>SignUp</Text>
-    </View>
-  );
+    <Container>
+      <Title>Cadastre-se</Title>
+      <FormSignUp />
+    </Container>
+  )
 }

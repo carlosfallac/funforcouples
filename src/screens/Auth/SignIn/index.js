@@ -1,10 +1,13 @@
 import React from "react"
-import { Text, View } from "react-native";
+import { Container, Title } from "../../../themes"
+import { FormSignIn } from "../../../components/Forms/FormSignIn";
 
 export function SignIn() {
+
   return (
-    <View>
-      <Text>SignIn</Text>
-    </View>
+    <Container>
+      <Title>Entrar</Title>
+      <FormSignIn />
+    </Container>
   );
 }

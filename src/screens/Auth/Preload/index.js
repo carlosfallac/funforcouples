@@ -1,10 +1,20 @@
 import React from "react"
-import { Text, View } from "react-native";
+import { Container } from "../../../themes"
+
+import LottieView from "lottie-react-native";
+import Animation from "../../../assets/heart.json"
+
 
 export function Preload() {
   return (
-    <View>
-      <Text>Preload</Text>
-    </View>
+    <Container>
+      <LottieView
+        source={Animation}
+        autoPlay
+        loop={true}
+        speed={0.8}
+        style={{ width: 150, justifyContent: "center" }}
+      />
+    </Container>
   );
 }

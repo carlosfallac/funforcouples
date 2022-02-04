@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "706148724593",
+    "project_id": "fun-for-couples-react-native",
+    "storage_bucket": "fun-for-couples-react-native.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706148724593:android:03c9a1737c82e4f487d0d0",
+        "android_client_info": {
+          "package_name": "com.funforcouples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706148724593-4t7kogotjlek9t374l9bj1it1of96222.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.funforcouples",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "706148724593-e7h6bu48iqc961ptipq5l2s5db0vhe96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Vhgiq4_CVoDz__59AnV6qe1bMNvLUvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706148724593-e7h6bu48iqc961ptipq5l2s5db0vhe96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
