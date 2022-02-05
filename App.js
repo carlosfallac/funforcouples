@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Routes } from "./src/routes"
-import { Preload } from "./src/screens/Auth/Preload";
+import { Preload } from "./src/screens/Authentication/Preload";
 import {
   useFonts,
   Poppins_400Regular,
