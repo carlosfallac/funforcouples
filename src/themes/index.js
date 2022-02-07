@@ -20,8 +20,9 @@ export const Title = styled.Text`
 `
 
 export const Button = styled.TouchableOpacity`
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     background-color: #CB902A;
@@ -30,8 +31,8 @@ export const Button = styled.TouchableOpacity`
 `
 
 export const DisableButton = styled.TouchableOpacity`
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     background-color: #CB902A;

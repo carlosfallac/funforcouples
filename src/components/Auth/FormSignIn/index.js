@@ -1,32 +1,34 @@
 import React, { useState } from "react";
-import { Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { Alert } from "react-native";
 import { Button, DisableButton, TextButton, Input } from "../../../themes";
 import {
-  Container,
-  TextLink,
-  TextRegistration
+  Container, ContainerFooter, TextLink,
 } from "./style";
+import { SocialSignIn } from "../SocialSignIn";
 import auth from "@react-native-firebase/auth";
 
 export function FormSignIn() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const navigation = useNavigation()
-
+  const navigation = useNavigation();
   const loginFirebase = () => {
     auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => Alert.alert("Conta", "Login realizado com sucesso!"))
       .catch(() => Alert.alert("Conta", "Erro ao realizar login. Verifique se seus dados estão corretos e tente novamente!"))
   }
-
+  const handleForgotPassword = () => {
+    auth()
+      .sendPasswordResetEmail(email)
+      .then(() => Alert.alert("Redefinir senha", "Enviamos um e-mail para você!"))
+      .catch(error => Alert.alert("Redefinir senha", error.message));
+  }
   const handleMessageButtonClick = () => {
     navigation.reset({
-      routes: [{ name: 'SignUp' }]
+      routes: [{ name: "SignUp" }]
     });
   }
-
   return (
     <Container>
       <Input
@@ -58,13 +60,11 @@ export function FormSignIn() {
             <TextButton>Entrar</TextButton>
           </Button>
       }
-      <TextRegistration>Não tem conta?
-        <TextLink
-          onPress={handleMessageButtonClick}
-        >
-          Registre-se
-        </TextLink>
-      </TextRegistration>
+      <SocialSignIn />
+      <ContainerFooter>
+        <TextLink onPress={handleMessageButtonClick}>Cadastrar-se</TextLink>
+        <TextLink onPress={handleForgotPassword}>Redefinir Senha</TextLink>
+      </ContainerFooter>
     </Container>
   )
 }

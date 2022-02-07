@@ -1,6 +1,5 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import { Trips } from "../screens/Layout/Trips";
 import { Movies } from "../screens/Layout/Movies";
 import { Extras } from "../screens/Layout/Extras";
