@@ -6,10 +6,7 @@ export const Container = styled.View`
     align-items: center;
 `
 export const ContainerFooter = styled.View`
-    width: 250px;
     margin-top: 50px;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: center;
 `
 

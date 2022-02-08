@@ -61,8 +61,8 @@ export function FormSignUp() {
       }
       <SocialSignUp />
       <ContainerFooter>
-        <TextLink onPress={handleMessageButtonClick}>Cadastrar-se</TextLink>
-        <TextLink onPress={handleForgotPassword}>Redefinir Senha</TextLink>
+        <TextLink onPress={handleMessageButtonClick}>Login</TextLink>
+        {email === "" ? null : <TextLink onPress={handleForgotPassword}>Redefinir Senha</TextLink>}
       </ContainerFooter>
     </Container>
   );

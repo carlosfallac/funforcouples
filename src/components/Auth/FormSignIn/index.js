@@ -22,7 +22,7 @@ export function FormSignIn() {
     auth()
       .sendPasswordResetEmail(email)
       .then(() => Alert.alert("Redefinir senha", "Enviamos um e-mail para você!"))
-      .catch(error => Alert.alert("Redefinir senha", error.message));
+      .catch(error => console.log(error));
   }
   const handleMessageButtonClick = () => {
     navigation.reset({
@@ -63,8 +63,8 @@ export function FormSignIn() {
       <SocialSignIn />
       <ContainerFooter>
         <TextLink onPress={handleMessageButtonClick}>Cadastrar-se</TextLink>
-        <TextLink onPress={handleForgotPassword}>Redefinir Senha</TextLink>
+        {email === "" ? null : <TextLink onPress={handleForgotPassword}>Redefinir Senha</TextLink>}
       </ContainerFooter>
     </Container>
-  )
+  );
 }
