@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "../../../themes"
 import LottieView from "lottie-react-native";
-import Animation from "../../../assets/heart.json"
+import Animation from "../../../assets/preload.json"
 
 export function Preload() {
   return (

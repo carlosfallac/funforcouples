@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">fun-for-couples</string>
+   <string name="facebook_app_id">795607481398231</string>
+   <string name="fb_login_protocol_scheme">fb795607481398231</string>
 </resources>

@@ -6,7 +6,7 @@ export const Container = styled.View`
     align-items: center;
 `
 export const ContainerFooter = styled.View`
-    margin-top: 50px;
+    margin-top: 20px;
     align-items: center;
 `
 
