@@ -22,7 +22,7 @@ export function FormSignUp() {
     auth()
       .sendPasswordResetEmail(email)
       .then(() => Alert.alert("Redefinir senha", "Enviamos um e-mail para você!"))
-      .catch(error => console.log(error));
+      .catch(() => Alert.alert("Redefinir senha", "E-mail não encontrado!"));
   }
   const handleMessageButtonClick = () => {
     navigation.reset({
