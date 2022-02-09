@@ -12,7 +12,7 @@ export const TabItem = styled.TouchableOpacity`
     align-items: center;
 `
 
-export const TabItemCenter = styled.TouchableOpacity`
+export const TabItemCenter = styled.View`
     width: 70px;
     height: 70px;
     justify-content: center;

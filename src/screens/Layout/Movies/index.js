@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { ScrollContainer, Title } from "../../../themes"
 
 export function Movies() {
   return (
-    <View>
-      <Text>Movies</Text>
-    </View>
+    <ScrollContainer>
+      <Title>Filmes</Title>
+    </ScrollContainer>
   )
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { ScrollContainer, Title } from "../../../themes"
 
 export function Trips() {
   return (
-    <View>
-      <Text>Trips</Text>
-    </View>
+    <ScrollContainer>
+      <Title>Viagens</Title>
+    </ScrollContainer>
   )
 }
