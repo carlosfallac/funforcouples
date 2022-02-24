@@ -33,7 +33,7 @@ export function List({ collection, icon }) {
           <FlatList
             data={list}
             keyExtractor={item => item.id}
-            renderItem={({ item }) => <Card data={item} icon={icon} />}
+            renderItem={({ item }) => <Card data={item} icon={icon}/>}
             contentContainerStyle={{ paddingBottom: 100 }}
             showsVerticalScrollIndicator={false}
             style={{ flex: 1 }}

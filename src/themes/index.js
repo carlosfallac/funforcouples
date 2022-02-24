@@ -7,7 +7,7 @@ export const Container = styled.SafeAreaView`
   align-items: center;
 `
 
-export const ScrollContainer = styled.ScrollView`
+export const ScrollContainer = styled.View`
   flex: 1;
   background-color: #FFF;
   padding: 40px 10px;
