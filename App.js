@@ -14,7 +14,6 @@ export default function App() {
     Poppins_400Regular,
     Poppins_700Bold,
   });
-
   if (!fontsLoaded) {
     return (
       <Preload />
