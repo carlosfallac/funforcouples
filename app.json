@@ -8,7 +8,8 @@
       "**/*"
     ],
     "android": {
-      "package": "com.funforcouples"
+      "package": "com.funforcouples",
+      "versionCode": 1
     }
   },
   "name": "Fun For Couples"
