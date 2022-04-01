@@ -30,6 +30,12 @@ export const Description = styled.Text`
   color: #FFF;
 `
 
+export const Image = styled.Image`
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+`
+
 export const Button = styled.TouchableOpacity`
   margin: 30px 0;
   padding: 10px 30px;
