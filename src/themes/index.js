@@ -10,10 +10,11 @@ export const Container = styled.SafeAreaView`
 export const ScrollContainer = styled.View`
   flex: 1;
   background-color: #FFF;
-  padding: 40px 10px;
+  padding: 40px 10px 0px 10px;
 `
 
 export const Title = styled.Text`
+  margin-top: 10px;
   font-family: 'Poppins_700Bold';
   font-size: 32px;
   text-align: center;
