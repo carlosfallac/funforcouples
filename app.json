@@ -3,14 +3,13 @@
     "name": "Fun For Couples",
     "icon": "./src/assets/hearts.png",
     "slug": "fun-for-couples",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "assetBundlePatterns": [
       "**/*"
     ],
     "android": {
       "package": "com.funforcouples",
-      "versionCode": 1
+      "versionCode": 6
     }
-  },
-  "name": "Fun For Couples"
+  }
 }

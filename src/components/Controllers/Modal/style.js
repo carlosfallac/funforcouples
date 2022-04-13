@@ -24,6 +24,7 @@ export const Title = styled.Text`
 `
 
 export const Description = styled.Text`
+  padding-bottom: 10px;
   font-size: 16px;
   font-family: 'Poppins_400Regular';
   text-align: center;

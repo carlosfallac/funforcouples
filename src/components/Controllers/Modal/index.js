@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from "react-native-modal";
+import { Admob } from "../Ads/Admob"
 import { ModalContainer, Title, Image, Description, Button, ModalScrollerView } from './style';
 
 export function ContentModal({ data, modalOpen, modalClose }) {
@@ -17,6 +18,7 @@ export function ContentModal({ data, modalOpen, modalClose }) {
         <ModalScrollerView>
           {data.image ? <Image source={{ uri: data.image }} /> : null}
           <Description>{data.description}</Description>
+          <Admob />
         </ModalScrollerView>
         <Button onPress={() => { modalClose(false) }}>
           <Title>Fechar</Title>

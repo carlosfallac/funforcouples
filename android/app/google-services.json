@@ -14,7 +14,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "706148724593-4t7kogotjlek9t374l9bj1it1of96222.apps.googleusercontent.com",
+          "client_id": "706148724593-t7a6ppqpb9b1uj982v7ejscioquilgas.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.funforcouples",
@@ -40,7 +40,8 @@
             }
           ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-1160553534851656~8289995895"
     }
   ],
   "configuration_version": "1"
