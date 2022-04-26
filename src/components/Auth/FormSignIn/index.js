@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Alert } from "react-native";
 import { Button, DisableButton, TextButton, Input } from "../../../themes";
-import {
-  Container, ContainerFooter, TextLink,
-} from "./style";
+import { Container, ContainerFooter, TextLink } from "./style";
 import { SocialSignIn } from "../SocialSignIn";
 import auth from "@react-native-firebase/auth";
 

@@ -35,6 +35,7 @@ export const Image = styled.Image`
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
+  border-radius: 5px;
 `
 
 export const Button = styled.TouchableOpacity`

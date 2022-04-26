@@ -8,7 +8,7 @@ export function Movies() {
     <ScrollContainer>
       <Admob />
       <Title>Filmes</Title>
-      <List collection="movies" icon="play-circle" />
+      <List collection="movies"/>
     </ScrollContainer>
   )
 }

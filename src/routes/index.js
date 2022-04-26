@@ -8,7 +8,7 @@ export function Routes() {
   const [user, setUser] = useState(null);
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(setUser)
-    return subscriber;
+    return subscriber
   }, []);
   return (
     <NavigationContainer>

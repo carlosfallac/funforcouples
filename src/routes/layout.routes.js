@@ -19,6 +19,6 @@ export function LayoutRoutes() {
       <Screen name="Movies" component={Movies} />
       <Screen name="Extras" component={Extras} />
       <Screen name="Account" component={Account} />
-    </Navigator >
+    </Navigator>
   );
 }

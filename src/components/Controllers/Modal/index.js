@@ -7,7 +7,7 @@ export function ContentModal({ data, modalOpen, modalClose }) {
   return (
     <Modal
       isVisible={modalOpen}
-      hasBackdrop={false}
+      hasBackdrop={true}
       style={{
         justifyContent: 'flex-end',
         margin: 0,

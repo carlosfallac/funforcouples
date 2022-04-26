@@ -5,7 +5,7 @@ import { Load } from "../../Animations/Load";
 import { Card } from "../Card";
 import firestore from "@react-native-firebase/firestore";
 
-export function List({ collection, icon }) {
+export function List({ collection }) {
   const [isLoading, setIsLoading] = useState(false);
   const [list, setList] = useState([]);
   useEffect(() => {
@@ -33,7 +33,7 @@ export function List({ collection, icon }) {
           <FlatList
             data={list}
             keyExtractor={item => item.id}
-            renderItem={({ item }) => <Card data={item} icon={icon}/>}
+            renderItem={({ item }) => <Card data={item} />}
             contentContainerStyle={{ paddingBottom: 100 }}
             showsVerticalScrollIndicator={false}
             style={{ flex: 1 }}

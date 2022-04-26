@@ -1,13 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useNavigation } from "@react-navigation/native";
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { TabArea, TabItem, TabItemCenter } from "./style";
 import LottieView from "lottie-react-native";
 import Heart from "../../../assets/heart.json";
 import Hearts from "../../../assets/hearts.json";
 
-export function TabBar() {
-  const navigation = useNavigation();
+export function TabBar({ state, navigation }) {
   const goTo = (screenName) => {
     navigation.navigate(screenName);
   }
@@ -33,10 +31,10 @@ export function TabBar() {
   return (
     <TabArea>
       <TabItem onPress={() => goTo('Trips')}>
-        <FontAwesome5 name="map-marked-alt" size={28} color="#FFF" />
+        <FontAwesome5 name="map-marked-alt" size={28} color="#FFF" style={{ opacity: state.index === 0 ? 1 : 0.7 }} />
       </TabItem>
       <TabItem onPress={() => goTo('Movies')}>
-        <FontAwesome name="play-circle" size={28} color="#FFF" />
+        <FontAwesome name="play-circle" size={28} color="#FFF" style={{ opacity: state.index === 1 ? 1 : 0.7 }} />
       </TabItem>
       <TabItemCenter onPress={() => setSave(!save)}>
         <LottieView
@@ -56,10 +54,10 @@ export function TabBar() {
         />
       </TabItemCenter>
       <TabItem onPress={() => goTo('Extras')}>
-        <FontAwesome5 name="tram" size={28} color="#FFF" />
+        <FontAwesome5 name="tram" size={28} color="#FFF" style={{ opacity: state.index === 2 ? 1 : 0.7 }} />
       </TabItem>
       <TabItem onPress={() => goTo('Account')}>
-        <FontAwesome name="user" size={28} color="#FFF" />
+        <FontAwesome name="user" size={28} color="#FFF" style={{ opacity: state.index === 3 ? 1 : 0.7 }} />
       </TabItem>
     </TabArea>
   )

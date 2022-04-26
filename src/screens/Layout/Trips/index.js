@@ -8,7 +8,7 @@ export function Trips() {
     <ScrollContainer>
       <Admob />
       <Title>Viagens</Title>
-      <List collection="trips" icon="map-marked-alt" />
+      <List collection="trips"/>
     </ScrollContainer>
   )
 }

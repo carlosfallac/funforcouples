@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesome5 } from '@expo/vector-icons';
 import { ContentModal } from '../Modal';
 import {
   Container,
@@ -8,7 +7,7 @@ import {
   Title,
 } from "./style";
 
-export function Card({ data, icon }) {
+export function Card({ data }) {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <>
@@ -16,7 +15,6 @@ export function Card({ data, icon }) {
         <Content onPress={() => { setModalVisible(true) }}>
           <Information>
             <Title>{data.title}</Title>
-            <FontAwesome5 name={icon} size={28} color="#FFF" />
           </Information>
         </Content>
       </Container>

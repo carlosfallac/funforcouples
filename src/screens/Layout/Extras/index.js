@@ -8,7 +8,7 @@ export function Extras() {
     <ScrollContainer>
       <Admob />
       <Title>Extras</Title>
-      <List collection="extras" icon="tram" />
+      <List collection="extras"/>
     </ScrollContainer>
   )
 }
